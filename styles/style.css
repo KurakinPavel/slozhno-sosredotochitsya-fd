@@ -161,6 +161,15 @@
 	text-shadow: 1px 1px 0 #FF0070;
 }
 
+.text-link:hover {
+	text-decoration: underline;
+	text-decoration-color: #f1b2ce;
+}
+
+.text-link:focus-visible {
+	outline: 1px solid #f1b2ce;
+}
+
 .section-title-special {
 	margin-top: 20px;
 }
@@ -190,4 +199,8 @@
 	height: 100vh;
 	min-height: 668px;
 	padding: 10px;
+}
+
+.footer-decor-special {
+	text-shadow: 2px 2px 0 #ff0070;
 }
