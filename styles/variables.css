@@ -5,8 +5,11 @@
 	--main-line-height: 23.4px;
 	--content-text-color: #f1b2ce;
 	--elements-color: #ff0070;
+	--corners-color: #ff0070;
+	--header__theme-menu-color: #ff0070;
 	--titles-color: #db00ff;
-	--corners-border-styles: 1px solid var(--elements-color);
+	--section-titles-color: #ff0070;
+	--corners-border-styles: 1px solid var(--corners-color);
 	--main-indent-mobile: 10px;
 	--main-indent-desktop: 20px;
 }

@@ -74,7 +74,7 @@
 	font-size: var(--main-font-size);
 	line-height: 18px;
 	text-align: center;
-	color: var(--elements-color);
+	color: var(--header__theme-menu-color);
 }
 
 .header__theme-menu-list {
@@ -140,7 +140,7 @@
 	font-weight: bold;
 	font-size: var(--main-font-size);
 	line-height: var(--main-line-height);
-	color: var(--elements-color);
+	color: var(--section-titles-color);
 }
 
 .content__text {
