@@ -7,3 +7,7 @@
 	--titles-color: #db00ff;
 	--section-titles-color: #ff0070;
 }
+
+.theme-dark .header__decorative-element {
+	display: flex;
+}
