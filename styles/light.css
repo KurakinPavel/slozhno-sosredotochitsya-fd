@@ -1,5 +1,6 @@
 :root.theme-light {
 	--cover-image: url(../images/cover-image-light.png);
+	--page-background-color: #fff1f7;
 	--content-text-color: #353430;
 	--elements-color: #ff8dcB;
 	--corners-color: #353430;
@@ -15,6 +16,7 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		--cover-image: url(../images/cover-image-light.png);
+		--page-background-color: #fff1f7;
 		--content-text-color: #353430;
 		--elements-color: #ff8dcB;
 		--corners-color: #353430;

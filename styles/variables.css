@@ -1,5 +1,6 @@
 :root {
 	--cover-image: url(../images/cover-image-dark.png);
+	--page-background-color: #000028;
 	--font-family: 'IBM Plex mono', Arial;
 	--main-font-size: 18px;
 	--main-line-height: 23.4px;
