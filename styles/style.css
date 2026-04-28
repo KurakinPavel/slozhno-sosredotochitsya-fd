@@ -240,8 +240,8 @@
 		padding: var(--main-indent-desktop);
 	}
 	.header__decorative-element {
-		padding-top: var(--main-indent-desktop);
-		padding-right: var(--main-indent-desktop);
+		top: 20px;
+		right: 29px;
 	}
 	.decorated-zone::before {
 		top: var(--main-indent-desktop);
@@ -281,8 +281,8 @@
 		margin-bottom: var(--main-indent-desktop);
 	}
 	.section_alternate {
-		margin-top: 51px;
-		margin-bottom: 51px;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 	.article-list-special {
 		padding-left: 0;
@@ -333,9 +333,6 @@
 }
 
 @media (width >= 1024px) {
-	.header__decorative-element {
-		right: 9px;
-	}
 	.header__theme-menu {
 		justify-self: center;
 		align-self: start;
@@ -354,9 +351,9 @@
 		padding-left: 0;
 	}
 	.gallery {
-		margin-top: 31px;
+		margin-top: 30px;
 	}
 	.footer {
-		margin-top: 41px;
+		margin-top: 40px;
 	}
 }
