@@ -19,13 +19,11 @@
 
 .header__decorative-element {
 	position: absolute;
-	top: 0;
-	right: var(--main-indent-mobile);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding-top: var(--main-indent-mobile);
-	padding-right: var(--main-indent-mobile);
+	top: 10px;
+	right: 19px;
 	color: var(--elements-color);
 	font-family: var(--font-family), monospace;
 	font-weight: normal;
@@ -40,29 +38,30 @@
 	display: inline-block;
 	width: 9px;
 	height: 9px;
-	margin-left: var(--main-indent-mobile);
+	margin-left: 10px;
 	border-radius: 50%;
 	box-shadow: 0 0 4px 2px var(--elements-color);
 	background: var(--elements-color);
 }
 
-.decorative-corners {
+.decorated-zone::before {
+	content: "";
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	margin: var(--main-indent-mobile);
-}
-
-.decorative-corners_top-right {
-	top: 0;
-	right: 0;
+	top: var(--main-indent-mobile);
+	right: var(--main-indent-mobile);
 	border-top: var(--corners-border-styles);
 	border-right: var(--corners-border-styles);
 }
 
-.decorative-corners_bottom-left {
-	bottom: 0;
-	left: 0;
+.decorated-zone::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	bottom: var(--main-indent-mobile);
+	left: var(--main-indent-mobile);
 	border-bottom: var(--corners-border-styles);
 	border-left: var(--corners-border-styles);
 }
@@ -132,12 +131,12 @@
 	font-family: var(--font-family), monospace;
 	font-weight: bold;
 	font-size: var(--main-font-size);
-	line-height: 23px;
+	line-height: var(--main-line-height);
 	background-color: var(--elements-color);
 }
 
 .section {
-	margin-top: 39px;
+	margin-top: 40px;
 	padding-right: var(--main-indent-mobile);
 	padding-bottom: var(--main-indent-mobile);
 	padding-left: var(--main-indent-mobile);
@@ -152,7 +151,7 @@
 }
 
 .content {
-	margin-top: 21px;
+	margin-top: 20px;
 	font-family: var(--font-family), monospace;
 	font-weight: normal;
 	font-size: var(--main-font-size);
@@ -195,7 +194,7 @@
 }
 
 .gallery {
-	margin-top: 32px;
+	margin-top: 30px;
 	padding: var(--main-indent-mobile);
 }
 
@@ -222,7 +221,7 @@
 	width: 100%;
 	height: 100vh;
 	min-height: 668px;
-	margin-top: 30px;
+	margin-top: 31px;
 	padding: var(--main-indent-mobile);
 }
 
@@ -244,8 +243,13 @@
 		padding-top: var(--main-indent-desktop);
 		padding-right: var(--main-indent-desktop);
 	}
-	.decorative-corners {
-		margin: var(--main-indent-desktop);
+	.decorated-zone::before {
+		top: var(--main-indent-desktop);
+		right: var(--main-indent-desktop);
+	}
+	.decorated-zone::after {
+		bottom: var(--main-indent-desktop);
+		left: var(--main-indent-desktop);
 	}
 	.header__title {
 		/*отрицательный отступ применён по рекомендации наставника*/
