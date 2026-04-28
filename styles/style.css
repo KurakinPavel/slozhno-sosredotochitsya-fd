@@ -202,15 +202,15 @@
 	margin-bottom: var(--main-indent-mobile);
 }
 
+.gallery-list {
+	display: grid;
+	gap: var(--main-indent-mobile);
+}
+
 .gallery__image {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-
-.gallery-list {
-	display: grid;
-	gap: var(--main-indent-mobile);
 }
 
 .footer {
