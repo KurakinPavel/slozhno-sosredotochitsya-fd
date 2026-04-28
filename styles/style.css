@@ -1,11 +1,11 @@
 .page {
 	height: 100%;
+	background-color: var(--page-background-color);
 	background-image: var(--cover-image);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: var(--page-background-color);
 }
 
 .header {
@@ -19,11 +19,11 @@
 
 .header__decorative-element {
 	position: absolute;
+	top: 10px;
+	right: 19px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	top: 10px;
-	right: 19px;
 	color: var(--elements-color);
 	font-family: var(--font-family), monospace;
 	font-weight: normal;
@@ -47,10 +47,10 @@
 .decorated-zone::before {
 	content: "";
 	position: absolute;
-	width: 25px;
-	height: 25px;
 	top: var(--main-indent-mobile);
 	right: var(--main-indent-mobile);
+	width: 25px;
+	height: 25px;
 	border-top: var(--corners-border-styles);
 	border-right: var(--corners-border-styles);
 }
@@ -58,10 +58,10 @@
 .decorated-zone::after {
 	content: "";
 	position: absolute;
-	width: 25px;
-	height: 25px;
 	bottom: var(--main-indent-mobile);
 	left: var(--main-indent-mobile);
+	width: 25px;
+	height: 25px;
 	border-bottom: var(--corners-border-styles);
 	border-left: var(--corners-border-styles);
 }
@@ -88,9 +88,9 @@
 	min-height: 20px;
 	border: none;
 	outline: none;
-	cursor: pointer;
 	text-transform: lowercase;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -171,8 +171,8 @@
 }
 
 .text-link:hover {
-	text-decoration-color: var(--content-text-color);
 	border-bottom: 1px solid var(--content-text-color);
+	text-decoration-color: var(--content-text-color);
 }
 
 .text-link:focus-visible {
@@ -208,10 +208,10 @@
 }
 
 .gallery__image {
+	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	display: block;
 }
 
 .footer {
@@ -308,9 +308,9 @@
 		padding: var(--main-indent-desktop);
 	}
 	.gallery-list {
+		grid-template-columns: repeat(3, 1fr);
 		gap: var(--main-indent-desktop);
 		margin-top: var(--main-indent-desktop);
-		grid-template-columns: repeat(3, 1fr);
 	}
 	.gallery__image-place:nth-child(1) {
 		grid-column: 1 / 3;
